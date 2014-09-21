@@ -9,6 +9,11 @@
     "resources": {
         "media": [
             {
+                "file": "images/panda_eye.png",
+                "name": "IMAGE_PANDA_EYE",
+                "type": "png"
+            },
+            {
                 "file": "images/icon.png",
                 "menuIcon": true,
                 "name": "IMAGE_APP_ICON",
@@ -29,7 +34,7 @@
     "shortName": "Pandozer",
     "uuid": "69d46856-f13b-4a66-94db-6c2d3a366016",
     "versionCode": 1,
-    "versionLabel": "1.0",
+    "versionLabel": "1.1",
     "watchapp": {
         "watchface": true
     }
