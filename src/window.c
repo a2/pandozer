@@ -72,14 +72,14 @@ static void tick_handler(struct tm *tick_time, TimeUnits units_changed) {
   
   layer_set_hidden((Layer *)s_bitmap_panda_eye, true);
 
-  uint32_t timeout = 1000;
+  uint32_t timeout = 600;
   bool hidden = false;
   for (int i = 0; i < 5; i++) {
     AppTimerCallback callback = (hidden ? app_timer_callback_open_panda_eye : app_timer_callback_close_panda_eye);
     app_timer_register(timeout, callback, NULL);
     
     hidden = !hidden;
-    timeout += 500;
+    timeout += 150;
   }
 }
 
